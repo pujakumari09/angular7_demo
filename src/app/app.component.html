@@ -1,0 +1,15 @@
+<div style = "text-align:center"> 
+  <h1> Welcome to {{ title }}! </h1> 
+</div>
+
+<div> Months:
+  <select>
+    <option *ngFor="let i of months">{{i}}</option>
+  </select>
+</div>
+<div>
+  <p *ngIf="isavailable; else condition2">Valid.</p>
+  <ng-template #condition2>Invalid.</ng-template>
+</div>
+<app-new-cmp></app-new-cmp>
+<router-outlet></router-outlet>
