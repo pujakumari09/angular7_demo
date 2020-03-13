@@ -1,3 +1,12 @@
+<h1>
+  Angular Routing Demo
+</h1>
+<nav>
+  <a routerLink = '/home'>Home</a>
+  <a routerLink = '/contactus'>Contact Us</a>
+  <a routerLink = '/new-cmp'>New Compo</a>
+</nav>
+
 <div style = "text-align:center"> 
   <h1> Welcome to {{ title | uppercase }}! </h1> 
 </div>
@@ -32,5 +41,4 @@
   <ng-template #condition2>Invalid.</ng-template>
 </div>
 <button (click) = "myClickFunction($event);">Click</button>
-<app-new-cmp></app-new-cmp>
 <router-outlet></router-outlet>
